@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ⛰ одна большая гора с острой вершиной и снегом -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Тело горы -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,3 L22,20 L2,20 Z"/>
+
+    <!-- Снежная шапка (белее, чуть другой оттенок для контраста) -->
+    <path
+        android:fillColor="#CCCCCC"
+        android:pathData="M12,3 L8.5,10 L15.5,10 Z"/>
+
+</vector>
