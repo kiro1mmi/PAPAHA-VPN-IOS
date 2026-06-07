@@ -13,9 +13,9 @@ workflows:
         script: |
           flutter build ios --release --no-codesign
           cd build/ios/iphoneos
-          mkdir -p Payload
-          cp -r Runner.app Payload/
-          zip -r PAPAHA-VPN.ipa Payload/
+          mkdir Payload
+          cp -r Runner.app Payload/Runner.app
+          zip -qr ../../../PAPAHA-VPN.ipa Payload
     artifacts:
-      - build/ios/iphoneos/PAPAHA-VPN.ipa
+      - PAPAHA-VPN.ipa
  
